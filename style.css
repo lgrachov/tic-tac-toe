@@ -1,0 +1,32 @@
+body {
+  display: flex;
+
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.board {
+  display: grid;
+
+  grid-template-rows: repeat(3, 105px);
+  grid-template-columns: repeat(3, 105px);
+  gap: 0;
+}
+
+.square {
+  border: 2px solid black;
+
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square i {
+  font-size: 72px;
+}
